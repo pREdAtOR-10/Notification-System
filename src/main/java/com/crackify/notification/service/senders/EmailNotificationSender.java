@@ -9,7 +9,7 @@ public class EmailNotificationSender implements INotificationSender{
     }
     @Override
     public void send(Notification notification) throws Exception {
-        int random = (int) Math.random()*10;
+        int random = (int) (Math.random()*10);
         if(random < 2){
             throw new Exception("Failed to send email");
         }

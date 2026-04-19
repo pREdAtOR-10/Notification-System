@@ -30,7 +30,10 @@ public class NotificationServiceApplication {
 		//1st Application
 		NotificationService service = new NotificationService(queue);
 		NotificationRequest request = new NotificationRequest("1", "Hello", List.of(NotificationChannel.EMAIL));
+
+		NotificationRequest request2 = new NotificationRequest("2", "Hello World 2", List.of(NotificationChannel.PUSH_NOTIFICATION));
 		service.sendNotification(request);
+		service.sendNotification(request2);
 
 	}
 
