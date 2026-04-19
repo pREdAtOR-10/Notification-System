@@ -4,11 +4,9 @@ import com.crackify.notification.service.factory.NotificationSenderFactory;
 import com.crackify.notification.service.models.NotificationChannel;
 import com.crackify.notification.service.models.NotificationRequest;
 import com.crackify.notification.service.queue.NotificationQueue;
-import com.crackify.notification.service.senders.INotificationSender;
 import com.crackify.notification.service.services.NotificationProcessor;
 import com.crackify.notification.service.services.NotificationService;
 import com.crackify.notification.service.worker.NotificationWorker;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.List;
